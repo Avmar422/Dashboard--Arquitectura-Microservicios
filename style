@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f4f8;
+    color: #4a5568;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto 1fr; 
+    grid-template-areas:
+        "header"
+        "nav"
+        "main";
+    min-height: 100vh;
+}
+
+.dashboard-header {
+    grid-area: header;
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    color: #a563f1;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    color: #333;
+}
+
+.dashboard-nav {
+    grid-area: nav;
+    background-color: #634d8b;
+    width: 100%;
+    padding: 20px 0; 
+    border-radius: 0 0 25px 25px; 
+    box-shadow: 0 4px 15px rgba(162, 155, 254, 0.3);
+    position: relative;
+    z-index: 10;
+}
+
+.dashboard-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold; 
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.dashboard-nav ul li a:hover {
+    background-color: #915ce7b2;
+}
+
+.dashboard-main {
+    grid-area: main;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.metrics-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    flex: 1;
+    text-align: center;
+    border-top: 4px solid #ac85eb; 
+}
+
+
+.data-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.chart-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    flex: 2;
+}
+
+.data-table-section{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    flex: 1;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+    padding: 12px 15px;
+    border: 1px solid #edf2f7;
+    text-align: left;
+}
+
+.data-table thead {
+    background-color: #f8fafc;
+    color: #6366f1;
+}
+
+.chart-container {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #e2e8f0; 
+}
+
+:root {
+    --chart-bg: rgba(112, 81, 170, 0.7);
+    --chart-border: rgb(160, 109, 180);
+    --chart-line-width: 2;
+    --chart-radius: 8;
+    --card-bg: #ffffff;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 8px;
+    font-family: var(--font-main);
+}

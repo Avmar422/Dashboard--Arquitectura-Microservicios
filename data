@@ -1,0 +1,42 @@
+{
+    "metrics": [
+        {
+            "title": "Total de ventas",
+            "value": "$2,850.50"
+        },
+        {
+            "title": "Nuevos Usuarios",
+            "value": "920"
+        },
+        {
+            "title": "Tasa de Rebote",
+            "value": "25%"
+        }
+    ],
+    "transactions": [
+        {
+            "id": "TR-4402",
+            "product": "Suscripción Premium Mensual",
+            "date": "11-02-2026",
+            "amount": 29.99
+        },
+        {
+            "id": "TR-3392",
+            "product": "Pack 50 Créditos de Envío",
+            "date": "10-02-2026",
+            "amount": 110.00
+        },
+        {
+            "id": "TR-2815",
+            "product": "Licencia Multi-usuario pro",
+            "date": "09-02-2026",
+            "amount": 99.00
+        },
+        {
+            "id": "TR-1024",
+            "product": "Tarjeta de Regalo Virtual",
+            "date": "08-02-2026",
+            "amount": 50.00
+        }
+    ]
+}
